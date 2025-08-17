@@ -42,7 +42,7 @@
         compatible = "zmk,combos";
 
         layer4 {
-            bindings = <&mo 2>;
+            bindings = <&mo 3>;
             key-positions = <57 61>;
         };
     };

@@ -99,11 +99,11 @@
 
         Layer3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &ctrl_shift_n  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans         &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans         &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans         &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans    &trans  &ctrl_shift_n  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans         &trans  &trans  &trans  &trans
             >;
         };
     };

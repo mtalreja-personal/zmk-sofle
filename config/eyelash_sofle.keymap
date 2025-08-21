@@ -49,25 +49,25 @@
 
         rightbrace {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <24 37>;
+            key-positions = <37 50>;
             layers = <0>;
         };
 
         leftbrace {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <23 36>;
+            key-positions = <36 49>;
             layers = <0>;
         };
 
         equal {
             bindings = <&kp EQUAL>;
-            key-positions = <24 11>;
+            key-positions = <24 37>;
             layers = <0>;
         };
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <10 23>;
+            key-positions = <23 36>;
             layers = <0>;
         };
 

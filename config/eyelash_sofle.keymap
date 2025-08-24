@@ -43,11 +43,6 @@
     combos {
         compatible = "zmk,combos";
 
-        softoff {
-            bindings = <&soft_off>;
-            key-positions = <14 28 40>;
-        };
-
         L3 {
             bindings = <&mo 3>;
             key-positions = <57 63>;

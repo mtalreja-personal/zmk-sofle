@@ -261,8 +261,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
 combos:
-- p: [14, 28, 40]
-  k: '&soft_off'
 - p: [57, 63]
   k: Layer3
   l: [LAYER0, layer1, Layer2]

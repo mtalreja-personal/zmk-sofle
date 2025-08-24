@@ -645,11 +645,11 @@ rect.held, rect.combo.held {
 <text x="103" y="161" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
 <g class="combo combopos-1">
-<path d="M462,294 l-54,0" class="combo"/>
-<path d="M462,294 l54,0" class="combo"/>
-<rect rx="6" ry="6" x="448" y="281" width="28" height="26" class="combo"/>
+<path d="M587,276 l-179,16" class="combo"/>
+<path d="M587,276 l179,-16" class="combo"/>
+<rect rx="6" ry="6" x="573" y="264" width="28" height="26" class="combo"/>
 <a href="#Layer3">
-<text x="462" y="294" class="combo tap layer-activator">Layer3</text>
+<text x="587" y="276" class="combo tap layer-activator">Layer3</text>
 </a></g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="826" y="183" width="28" height="26" class="combo"/>
@@ -1038,11 +1038,11 @@ rect.held, rect.combo.held {
 <text x="103" y="161" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
 <g class="combo combopos-1">
-<path d="M462,294 l-54,0" class="combo"/>
-<path d="M462,294 l54,0" class="combo"/>
-<rect rx="6" ry="6" x="448" y="281" width="28" height="26" class="combo"/>
+<path d="M587,276 l-179,16" class="combo"/>
+<path d="M587,276 l179,-16" class="combo"/>
+<rect rx="6" ry="6" x="573" y="264" width="28" height="26" class="combo"/>
 <a href="#Layer3">
-<text x="462" y="294" class="combo tap layer-activator">Layer3</text>
+<text x="587" y="276" class="combo tap layer-activator">Layer3</text>
 </a></g>
 </g>
 </g>
@@ -1389,11 +1389,11 @@ rect.held, rect.combo.held {
 <text x="103" y="161" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
 <g class="combo combopos-1">
-<path d="M462,294 l-54,0" class="combo"/>
-<path d="M462,294 l54,0" class="combo"/>
-<rect rx="6" ry="6" x="448" y="281" width="28" height="26" class="combo"/>
+<path d="M587,276 l-179,16" class="combo"/>
+<path d="M587,276 l179,-16" class="combo"/>
+<rect rx="6" ry="6" x="573" y="264" width="28" height="26" class="combo"/>
 <a href="#Layer3">
-<text x="462" y="294" class="combo tap layer-activator">Layer3</text>
+<text x="587" y="276" class="combo tap layer-activator">Layer3</text>
 </a></g>
 </g>
 </g>
@@ -1694,9 +1694,10 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(535, 294) rotate(-30.0)" class="key held keypos-59">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
+<g transform="translate(535, 294) rotate(-30.0)" class="key trans keypos-59">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g transform="translate(610, 283) rotate(-30.0)" class="key trans keypos-60">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -1713,10 +1714,9 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(784, 259)" class="key trans keypos-63">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(784, 259)" class="key held keypos-63">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
 </g>
 <g class="combo combopos-0">
 <path d="M103,161 l-13,45" class="combo"/>

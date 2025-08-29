@@ -326,9 +326,6 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - Layer2
 combos:
-- p: [57, 63]
-  k: Layer3
-  l: [LAYER0, Layer1, Layer2]
 - p: [37, 50]
   k: '&as RIGHT_BRACKET'
   l: [LAYER0]

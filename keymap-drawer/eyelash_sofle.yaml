@@ -330,19 +330,19 @@ combos:
   k: Layer3
   l: [LAYER0, Layer1, Layer2]
 - p: [37, 50]
-  k: {t: ']', s: '}'}
+  k: '&as RIGHT_BRACKET'
   l: [LAYER0]
 - p: [36, 49]
-  k: {t: '[', s: '{'}
+  k: '&as LEFT_BRACKET'
   l: [LAYER0]
 - p: [23, 36]
-  k: {t: '=', s: +}
+  k: '&as EQUAL'
   l: [LAYER0]
 - p: [22, 35]
-  k: {t: '-', s: _}
+  k: '&as MINUS'
   l: [LAYER0]
 - p: [0, 13]
-  k: {t: '`', s: '~'}
+  k: '&as GRAVE'
   l: [LAYER0]
 - p: [57, 63]
   k: Layer3

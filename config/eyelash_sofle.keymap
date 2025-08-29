@@ -64,12 +64,6 @@
     combos {
         compatible = "zmk,combos";
 
-        L3 {
-            bindings = <&mo 3>;
-            key-positions = <57 63>;
-            layers = <0 1 2>;
-        };
-
         rightbrace {
             bindings = <&as RIGHT_BRACKET>;
             key-positions = <37 50>;

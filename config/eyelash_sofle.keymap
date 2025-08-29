@@ -71,31 +71,31 @@
         };
 
         rightbrace {
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&as RIGHT_BRACKET>;
             key-positions = <37 50>;
             layers = <0>;
         };
 
         leftbrace {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&as LEFT_BRACKET>;
             key-positions = <36 49>;
             layers = <0>;
         };
 
         equal {
-            bindings = <&kp EQUAL>;
+            bindings = <&as EQUAL>;
             key-positions = <23 36>;
             layers = <0>;
         };
 
         minus {
-            bindings = <&kp MINUS>;
+            bindings = <&as MINUS>;
             key-positions = <22 35>;
             layers = <0>;
         };
 
         tilde {
-            bindings = <&kp GRAVE>;
+            bindings = <&as GRAVE>;
             key-positions = <0 13>;
             layers = <0>;
         };

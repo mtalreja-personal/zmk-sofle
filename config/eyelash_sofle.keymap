@@ -37,30 +37,26 @@
         tap-ms = <100>;
     };
 
-  as_ht: autoshift_hold_tap {
-    compatible = "zmk,behavior-hold-tap";
-    label = "AUTOSHIFT_HOLD_TAP";
-    #binding-cells = <2>;
-    tapping-term-ms = <200>;
-    flavor = "tap-preferred";
-    bindings = <&shifted>, <&kp>;
-  };
+    as_ht: autoshift_hold_tap {
+        compatible = "zmk,behavior-hold-tap";
+        label = "AUTOSHIFT_HOLD_TAP";
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        flavor = "tap-preferred";
+        bindings = <&shifted>, <&kp>;
+    };
 
-  as: autoshift {
-    compatible = "zmk,behavior-macro-one-param";
-    #binding-cells = <1>;
-    label = "AUTOSHIFT_KP";
-    bindings =
-      <&macro_press>,
-      <&macro_param_1to1>,
-      <&macro_param_1to2>,
-      <&as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
-      <&macro_pause_for_release>,
-      <&macro_release>,
-      <&macro_param_1to1>,
-      <&macro_param_1to2>,
-      <&as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
-  };
+    as: autoshift {
+        compatible = "zmk,behavior-macro-one-param";
+        #binding-cells = <1>;
+        label = "AUTOSHIFT_KP";
+        bindings =
+            <&macro_press>,
+            <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
+            <&macro_pause_for_release>,
+            <&macro_release>,
+            <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
+    };
 
     behaviors {
     };
@@ -69,7 +65,7 @@
         compatible = "zmk,combos";
 
         L3 {
-            bindings = <&mo 0>;
+            bindings = <&mo 3>;
             key-positions = <57 63>;
             layers = <0 1 2>;
         };
@@ -88,13 +84,13 @@
 
         equal {
             bindings = <&kp EQUAL>;
-            key-positions = <24 37>;
+            key-positions = <23 36>;
             layers = <0>;
         };
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <23 36>;
+            key-positions = <22 35>;
             layers = <0>;
         };
 
@@ -118,15 +114,18 @@
             label = "CTRL_SHIFT_N";
         };
 
-      shifted: macro_shifted_kp {
-        #binding-cells = <1>;
-        label = "MACRO_SHIFTED_KP";
-        compatible = "zmk,behavior-macro-one-param";
-        bindings =
-          <&macro_press &kp LSHFT>,
-          <&macro_param_1to1 &macro_tap &kp MACRO_PLACEHOLDER>,
-          <&macro_release &kp LSHFT>;
-      };
+        shifted: macro_shifted_kp {
+            #binding-cells = <1>;
+            label = "MACRO_SHIFTED_KP";
+            compatible = "zmk,behavior-macro-one-param";
+            bindings =
+                <&macro_press>,
+                <&kp LSHFT &macro_param_1to1>,
+                <&macro_tap>,
+                <&kp MACRO_PLACEHOLDER>,
+                <&macro_release>,
+                <&kp LSHFT>;
+        };
     };
 
     keymap {

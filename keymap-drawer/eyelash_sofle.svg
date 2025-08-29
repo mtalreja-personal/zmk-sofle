@@ -670,11 +670,11 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-space"/>
 </g>
-<g transform="translate(389, 294) rotate(30.0)" class="key held keypos-57">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
+<g transform="translate(389, 294) rotate(30.0)" class="key keypos-57">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <a href="#Layer1">
-<text x="0" y="-4" class="key held tap layer-activator">Layer1</text>
+<text x="0" y="-4" class="key tap layer-activator">Layer1</text>
 </a></g>
 <g transform="translate(462, 91)" class="key enter keypos-58">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key enter side"/>
@@ -701,18 +701,18 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:backspace-reverse-outline"/>
 </g>
-<g transform="translate(784, 259)" class="key held keypos-63">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
+<g transform="translate(784, 259)" class="key keypos-63">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <a href="#Layer2">
-<text x="0" y="-4" class="key held tap layer-activator">Layer2</text>
+<text x="0" y="-4" class="key tap layer-activator">Layer2</text>
 </a></g>
 <g class="combo combopos-0">
 <path d="M587,276 l-179,16" class="combo"/>
 <path d="M587,276 l179,-16" class="combo"/>
 <rect rx="6" ry="6" x="573" y="264" width="28" height="26" class="combo"/>
-<a href="#LAYER0">
-<text x="587" y="276" class="combo tap layer-activator">LAYER0</text>
+<a href="#Layer3">
+<text x="587" y="276" class="combo tap layer-activator">Layer3</text>
 </a></g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="826" y="183" width="28" height="26" class="combo"/>
@@ -725,14 +725,14 @@ rect.held, rect.combo.held {
 <text x="784" y="164" class="combo shifted">{</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="826" y="127" width="28" height="26" class="combo"/>
-<text x="840" y="140" class="combo tap">=</text>
-<text x="840" y="129" class="combo shifted">+</text>
+<rect rx="6" ry="6" x="770" y="106" width="28" height="26" class="combo"/>
+<text x="784" y="119" class="combo tap">=</text>
+<text x="784" y="108" class="combo shifted">+</text>
 </g>
 <g class="combo combopos-4">
-<rect rx="6" ry="6" x="770" y="106" width="28" height="26" class="combo"/>
-<text x="784" y="119" class="combo tap">-</text>
-<text x="784" y="108" class="combo shifted">_</text>
+<rect rx="6" ry="6" x="714" y="99" width="28" height="26" class="combo"/>
+<text x="728" y="112" class="combo tap">-</text>
+<text x="728" y="101" class="combo shifted">_</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="14" y="71" width="28" height="26" class="combo"/>
@@ -1106,8 +1106,8 @@ rect.held, rect.combo.held {
 <path d="M587,276 l-179,16" class="combo"/>
 <path d="M587,276 l179,-16" class="combo"/>
 <rect rx="6" ry="6" x="573" y="264" width="28" height="26" class="combo"/>
-<a href="#LAYER0">
-<text x="587" y="276" class="combo tap layer-activator">LAYER0</text>
+<a href="#Layer3">
+<text x="587" y="276" class="combo tap layer-activator">Layer3</text>
 </a></g>
 <g class="combo combopos-1">
 <path d="M587,276 l-179,16" class="combo"/>
@@ -1459,8 +1459,8 @@ rect.held, rect.combo.held {
 <path d="M587,276 l-179,16" class="combo"/>
 <path d="M587,276 l179,-16" class="combo"/>
 <rect rx="6" ry="6" x="573" y="264" width="28" height="26" class="combo"/>
-<a href="#LAYER0">
-<text x="587" y="276" class="combo tap layer-activator">LAYER0</text>
+<a href="#Layer3">
+<text x="587" y="276" class="combo tap layer-activator">Layer3</text>
 </a></g>
 <g class="combo combopos-1">
 <path d="M587,276 l-179,16" class="combo"/>

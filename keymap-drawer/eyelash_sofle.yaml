@@ -58,13 +58,13 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - {t: Layer1, type: held}
+  - Layer1
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:backspace-reverse-outline$$
-  - {t: Layer2, type: held}
+  - Layer2
   Layer1:
   - {t: '`', s: '~'}
   - F1
@@ -327,7 +327,7 @@ layers:
   - Layer2
 combos:
 - p: [57, 63]
-  k: LAYER0
+  k: Layer3
   l: [LAYER0, Layer1, Layer2]
 - p: [37, 50]
   k: {t: ']', s: '}'}
@@ -335,10 +335,10 @@ combos:
 - p: [36, 49]
   k: {t: '[', s: '{'}
   l: [LAYER0]
-- p: [24, 37]
+- p: [23, 36]
   k: {t: '=', s: +}
   l: [LAYER0]
-- p: [23, 36]
+- p: [22, 35]
   k: {t: '-', s: _}
   l: [LAYER0]
 - p: [0, 13]

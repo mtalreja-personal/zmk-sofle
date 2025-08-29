@@ -326,10 +326,10 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - Layer2
 combos:
-- p: [37, 50]
+- p: [49, 36]
   k: '&asl RIGHT_BRACKET'
   l: [LAYER0]
-- p: [36, 49]
+- p: [35, 48]
   k: '&asl LEFT_BRACKET'
   l: [LAYER0]
 - p: [23, 36]

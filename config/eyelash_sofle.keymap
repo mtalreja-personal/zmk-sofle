@@ -37,9 +37,9 @@
         tap-ms = <100>;
     };
 
-    as: auto_shift {
+    autoshift: autoshift {
         compatible = "zmk,behavior-hold-tap";
-        label = "as";
+        label = "autoshift";
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;

@@ -327,19 +327,19 @@ layers:
   - Layer2
 combos:
 - p: [37, 50]
-  k: '&as RIGHT_BRACKET'
+  k: '&asl RIGHT_BRACKET'
   l: [LAYER0]
 - p: [36, 49]
-  k: '&as LEFT_BRACKET'
+  k: '&asl LEFT_BRACKET'
   l: [LAYER0]
 - p: [23, 36]
-  k: '&as EQUAL'
+  k: '&asl EQUAL'
   l: [LAYER0]
 - p: [22, 35]
-  k: '&as MINUS'
+  k: '&asl MINUS'
   l: [LAYER0]
 - p: [0, 13]
-  k: '&as GRAVE'
+  k: '&asl GRAVE'
   l: [LAYER0]
 - p: [57, 63]
   k: Layer3

@@ -46,6 +46,15 @@
         bindings = <&shifted>, <&kp>;
     };
 
+    as_ht_long: autoshift_hold_tap_long {
+        compatible = "zmk,behavior-hold-tap";
+        label = "AUTOSHIFT_HOLD_TAP_LONG";
+        #binding-cells = <2>;
+        tapping-term-ms = <500>;
+        flavor = "tap-preferred";
+        bindings = <&shifted>, <&kp>;
+    };
+
     as: autoshift {
         compatible = "zmk,behavior-macro-one-param";
         #binding-cells = <1>;
@@ -58,6 +67,18 @@
             <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
     };
 
+    asl: autoshiftl {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            label = "AUTOSHIFT_KP_L";
+            bindings =
+                <&macro_press>,
+                <&macro_param_1to1 &macro_param_1to2 &as_ht_long MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&macro_param_1to1 &macro_param_1to2 &as_ht_long MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
+        };
+
     behaviors {
     };
 
@@ -65,31 +86,31 @@
         compatible = "zmk,combos";
 
         rightbrace {
-            bindings = <&as RIGHT_BRACKET>;
+            bindings = <&asl RIGHT_BRACKET>;
             key-positions = <37 50>;
             layers = <0>;
         };
 
         leftbrace {
-            bindings = <&as LEFT_BRACKET>;
+            bindings = <&asl LEFT_BRACKET>;
             key-positions = <36 49>;
             layers = <0>;
         };
 
         equal {
-            bindings = <&as EQUAL>;
+            bindings = <&asl EQUAL>;
             key-positions = <23 36>;
             layers = <0>;
         };
 
         minus {
-            bindings = <&as MINUS>;
+            bindings = <&asl MINUS>;
             key-positions = <22 35>;
             layers = <0>;
         };
 
         tilde {
-            bindings = <&as GRAVE>;
+            bindings = <&asl GRAVE>;
             key-positions = <0 13>;
             layers = <0>;
         };
@@ -101,12 +122,6 @@
     };
 
     macros {
-        ctrl_shift_n: ctrl_shift_n {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LS(N))>;
-            label = "CTRL_SHIFT_N";
-        };
 
         shifted: macro_shifted_kp {
             #binding-cells = <1>;

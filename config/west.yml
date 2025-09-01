@@ -2,8 +2,6 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: urob
-      url-base: https://github.com/urob
       # Additional modules containing boards/shields/custom code can be listed here as well.
       # See:
       # - https://zmk.dev/docs/features/modules
@@ -18,12 +16,8 @@ manifest:
       url: https://github.com/a741725193/zmk-sofle
       revision: main
     - name: zmk
-      # remote: urob
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-helpers
-      remote: urob
-      revision: main
   self:
     path: boards

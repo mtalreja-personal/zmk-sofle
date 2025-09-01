@@ -41,7 +41,7 @@
         compatible = "zmk,behavior-hold-tap";
         label = "AUTOSHIFT_HOLD_TAP";
         #binding-cells = <2>;
-        tapping-term-ms = <200>;
+        tapping-term-ms = <150>;
         flavor = "tap-preferred";
         bindings = <&shifted>, <&kp>;
     };
@@ -50,7 +50,7 @@
         compatible = "zmk,behavior-hold-tap";
         label = "AUTOSHIFT_HOLD_TAP_LONG";
         #binding-cells = <2>;
-        tapping-term-ms = <300>;
+        tapping-term-ms = <250>;
         flavor = "tap-preferred";
         bindings = <&shifted>, <&kp>;
     };

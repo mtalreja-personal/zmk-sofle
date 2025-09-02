@@ -83,8 +83,6 @@
             <&macro_param_1to1 &macro_param_1to2 &as_ht_long MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
     };
 
-
-
     hm_l: homerow_mods_left {
         compatible = "zmk,behavior-hold-tap";
         label = "homerow_mods_left";
@@ -150,36 +148,36 @@
         rightbrace {
             bindings = <&asl RIGHT_BRACKET>;
             key-positions = <49 36>;
-            layers = <4>;
         };
 
         leftbrace {
             bindings = <&asl LEFT_BRACKET>;
             key-positions = <35 48>;
-            layers = <4>;
         };
 
         equal {
             bindings = <&asl EQUAL>;
             key-positions = <23 36>;
-            layers = <4>;
         };
 
         minus {
             bindings = <&asl MINUS>;
             key-positions = <22 35>;
-            layers = <4>;
         };
 
         tilde {
             bindings = <&asl GRAVE>;
             key-positions = <0 13>;
-            layers = <4>;
         };
 
         Layer3 {
             bindings = <&mo 3>;
             key-positions = <57 63>;
+        };
+
+        Layer4 {
+            bindings = <&mo 3>;
+            key-positions = <57 63 39>;
         };
     };
 
@@ -220,7 +218,7 @@
 &trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp HOME         &kp UP      &kp END    &kp MINUS         &kp EQUAL
 &trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &mo 2
             >;
 
             display-name = "Layer1";
@@ -233,7 +231,7 @@
 &trans     &trans        &trans        &trans        &trans        &trans          &kp C_REWIND        &bt BT_CLR_ALL  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
 &trans     &out OUT_USB  &out OUT_BLE  &trans        &trans        &trans          &kp C_PREV          &bt BT_CLR      &trans  &trans      &trans     &kp LBRC     &kp RBRC
 &trans     &sys_reset    &trans        &bootloader   &trans        &trans          &kp C_NEXT          &trans          &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans        &trans        &trans        &trans        &trans          &kp K_PLAY_PAUSE    &trans          &trans  &trans      &trans     &trans
+&trans     &trans        &trans        &trans        &trans        &trans          &kp K_PLAY_PAUSE    &trans          &trans  &trans      &trans     &mo 2
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -247,7 +245,7 @@
 &trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp HOME         &kp UP      &kp END    &kp MINUS         &kp EQUAL
 &trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &mo 2
             >;
 
             sensor-bindings = <&scroll_encoder>;

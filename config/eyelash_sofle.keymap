@@ -176,7 +176,7 @@
         };
 
         Layer4 {
-            bindings = <&mo 4>;
+            bindings = <&mo 5>;
             key-positions = <57 63 39>;
         };
     };
@@ -227,11 +227,11 @@
 
         Layer2 {
             bindings = <
-&soft_off  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_FAST_FORWARD  &to 0           &to 1   &to 2       &to 3    &to 4        &soft_off
-&trans     &trans        &trans        &trans        &trans        &trans          &kp C_REWIND        &bt BT_CLR_ALL  &trans  &kp F11     &kp F12  &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE  &trans        &trans        &trans          &kp C_PREV          &bt BT_CLR      &trans  &trans      &trans   &kp LBRC     &kp RBRC
-&trans     &sys_reset    &trans        &bootloader   &trans        &trans          &kp C_NEXT          &trans          &trans  &sys_reset  &trans   &bootloader  &trans
-&trans     &trans        &trans        &trans        &trans        &trans          &kp K_PLAY_PAUSE    &trans          &trans  &trans      &trans   &mo 2
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_FAST_FORWARD  &to 0           &to 1   &to 2       &to 3    &to 4        &to 5
+&trans  &trans        &trans        &trans        &trans        &trans          &kp C_REWIND        &bt BT_CLR_ALL  &trans  &kp F11     &kp F12  &kp UNDER    &kp PLUS
+&trans  &out OUT_USB  &out OUT_BLE  &trans        &trans        &trans          &kp C_PREV          &bt BT_CLR      &trans  &trans      &trans   &kp LBRC     &kp RBRC
+&trans  &sys_reset    &trans        &bootloader   &trans        &trans          &kp C_NEXT          &trans          &trans  &sys_reset  &trans   &bootloader  &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &kp K_PLAY_PAUSE    &trans          &trans  &trans      &trans   &mo 2
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -251,7 +251,20 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        Layer4-AutoShift {
+        Layer4HRM {
+            display-name = "HRM";
+            bindings = <
+&kp ESC     &kp N1        &kp N2        &kp N3                &kp N4          &kp N5    &kp UP_ARROW     &kp N6     &kp N7         &kp N8                &kp N9             &kp N0           &kp BACKSPACE
+&kp TAB     &kp Q         &kp W         &kp E                 &kp R           &kp T     &kp DOWN_ARROW   &kp Y      &kp U          &kp I                 &kp O              &kp P            &kp BSLH
+&caps_word  &hm_l LGUI A  &hm_l LALT S  &hm_shift_l LSHIFT D  &hm_l LCTRL F   &kp G     &kp LEFT_ARROW   &kp H      &hm_r RCTRL J  &hm_shift_r RSHIFT K  &hm_r RIGHT_ALT L  &hm_r RGUI SEMI  &kp APOS
+&kp LSHFT   &kp Z         &kp X         &kp C                 &kp V           &kp B     &kp RIGHT_ARROW  &kp N      &kp M          &kp COMMA             &kp DOT            &kp FSLH         &kp RSHIFT
+&kp C_MUTE  &kp LCTRL     &kp LEFT_GUI  &kp LEFT_ALT          &kp LEFT_SHIFT  &mo 1     &kp ENTER        &kp ENTER  &kp SPACE      &kp RCTRL             &kp DELETE         &mo 2
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+        };
+
+        Layer5-AutoShift {
             bindings = <
 &kp ESC     &as N1     &as N2        &as N3        &as N4     &as N5    &kp UP_ARROW     &as N6     &as N7     &as N8     &as N9      &as N0    &kp BACKSPACE
 &kp TAB     &as Q      &as W         &as E         &as R      &as T     &kp DOWN_ARROW   &as Y      &as U      &as I      &as O       &as P     &as BSLH
